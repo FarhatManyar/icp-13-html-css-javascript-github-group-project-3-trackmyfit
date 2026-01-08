@@ -65,6 +65,7 @@
             border-radius: 20px;
             justify-content:space-evenly;
             flex-wrap: wrap;
+            
         }
         .card{
             height:250px;
