@@ -105,3 +105,26 @@ body {
 .select:hover {
     box-shadow: 0px 0px 2px 2px
 }
+  .footer{
+    background-color: #2563EB;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 3rem;
+    border-top: 3px solid var(--rosewater);
+  }
+
+  .footer p {
+    margin: 0.5rem 0;
+    color: white;
+  }
+
+  .footer a {
+    color: white;
+    margin: 0 0.8rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+.footer a:hover {
+    color:#FFD700 ;
+  }
