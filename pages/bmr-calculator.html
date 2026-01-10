@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>About Us - Track My Fit</title>
 
-  <link rel="stylesheet" href="../css/about.css">
+<head>
+  <title>BMR Calculator - Track My Fit</title>
+<link rel="stylesheet" href="../css/bmr-calculator.css">
 </head>
 
 <body>
 
-  
+
   <div class="nav-bar">
   <nav class="navbar">
     <ul class="nav-links">
@@ -40,43 +40,45 @@
 </div>
 
 
-
+ 
   <div class="header">
     <h1>Track My Fit</h1>
     <p>BMR Calculator</p>
   </div>
 
-<div class="container">
-  <h2>About Us</h2>
-  <p>
-    Track My Fit is a beginner-friendly fitness tracking website designed to
-    help users understand their health better. Our platform focuses on
-    simplicity, clarity, and ease of use so that anyone can start their fitness
-    journey without confusion.
-  </p>
-  <p>
-    Whether you are a student, working professional, or fitness enthusiast,
-    Track My Fit provides essential tools to track health data and stay motivated.
-  </p>
-
-  <h2>Our Mission</h2>
-  <p>
-    Our mission is to promote a healthy lifestyle by offering simple fitness
-    calculators and workout planning tools. We believe fitness should be
-    accessible to everyone, regardless of experience level.
-  </p>
-  <p>
-    Track My Fit encourages consistency, awareness, and self-improvement
-    through small daily actions that lead to long-term health benefits.
-  </p>
-
-  <h2>Features</h2>
-  <div class="feature-box">🏃 Fitness Tracking</div>
-  <div class="feature-box">🔥 BMI & BMR Calculators</div>
-  <div class="feature-box">🎯 Workout Goals</div>
+ 
+ <div class="form-row">
+  <label>Age</label>
+  <input type="number" id="age">
 </div>
 
- <footer class="fitness-footer">
+<div class="form-row">
+  <label>Gender</label>
+  <select id="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+</div>
+
+<div class="form-row">
+  <label>Height (cm)</label>
+  <input type="number" id="height">
+</div>
+
+<div class="form-row">
+  <label>Weight (kg)</label>
+  <input type="number" id="weight">
+</div>
+
+
+    <button onclick="calculateBMR()">Calculate BMR</button>
+
+    <div class="result" id="result">
+      Your BMR will appear here.
+    </div>
+  </div>
+
+  <footer class="fitness-footer">
 
   <div class="footer-container">
 
@@ -118,8 +120,27 @@
 </footer>
 
 
-<script>
-  function toggleTheme() {
+  
+  <script>
+    function calculateBMR() {
+      var age = document.getElementById("age").value;
+      var gender = document.getElementById("gender").value;
+      var height = document.getElementById("height").value;
+      var weight = document.getElementById("weight").value;
+
+      var bmr = 0;
+
+      if (gender === "male") {
+        bmr = 10 * weight + 6.25 * height - 5 * age + 5;
+      } else {
+        bmr = 10 * weight + 6.25 * height - 5 * age - 161;
+      }
+
+      document.getElementById("result").innerHTML =
+        "Your BMR is: <b>" + Math.round(bmr) + "</b> calories/day";
+    }
+
+    function toggleTheme() {
     document.body.classList.toggle("dark");
 
     var btn = document.getElementById("themeBtn");
@@ -130,7 +151,9 @@
       btn.innerHTML = "🌙 Dark";
     }
   }
-</script>
+  </script>
 
 </body>
+</html>
+
 </html>
