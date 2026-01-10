@@ -2,11 +2,11 @@
         body{
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #A7AAE1;
+            background-color:#F1F6F9;
         
         }
   .nav-bar {
-    background-color: #2563EB;
+    background-color: #212A3E;
     padding: 45px 30px;
     position: relative; 
     top: 0;
@@ -81,7 +81,7 @@
         .container{
             max-width: 800px;
             margin: 40px auto;
-            background-color: #ffffff;
+            background-color: #b1bdd6;
             padding: 25px;
             border-radius: 12px;
             box-shadow: 0 8px 15px rgba(0,0,0,0.1);
@@ -108,10 +108,47 @@
                 padding: 20px;
             }
         }
-     .footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #696FC7;
-      color: white;
-      margin-top: 20px;
-    }
+     .fitness-footer {
+  background-color: #394867; 
+  color: #ffffff;
+  padding: 30px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-box {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.footer-box h2,
+.footer-box h3 {
+  color: #F2AEBB;
+}
+
+.footer-box p {
+  line-height: 1.5;
+  margin: 6px 0;
+}
+
+.footer-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 8px;
+}
+
+.footer-end {
+  text-align: center;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #A7AAE1;
+  font-size: 14px;
+}
+ 
