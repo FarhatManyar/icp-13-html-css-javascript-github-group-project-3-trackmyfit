@@ -4,11 +4,22 @@
     background-color: #F1F6F9;
   }
   .nav-bar {
-    background-color:#212A3E;
+    background-color: #212A3E;
     padding: 45px 30px;
-    position: relative; 
+    position: sticky; 
     top: 0;
     align-items: center;
+    height: auto;
+  }
+    nav .logo {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .web-name{
+    font-size: 25px;
+    margin: 10px;
+    margin-right: 350px;
+    color: rgb(255, 255, 255);
   }
   .nav-bar ul {
   list-style: none;
@@ -16,7 +27,7 @@
   align-items: center;
   margin: 0;
   padding: 10px 20px;
-  justify-content: space-between;
+  justify-content: space-around;
   }
 
   .nav-bar a {
@@ -25,6 +36,17 @@
     font-size: 18px;
     font-weight: bold;
     margin-right: 30px;
+  }
+  .nav-bar span{
+    color: white;
+  }
+  .nav-items{
+    margin-left: 10px;
+    margin-right: 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 50px;
   }
   .nav-bar a:hover {
     color: #FFD700;
@@ -58,7 +80,7 @@
       position: absolute;
       top: 70px;
       right: 20px;
-      background-color: #2563EB;
+      background-color: #212A3E;
       flex-direction: column;
       width: 220px;
       padding: 15px;
@@ -75,9 +97,10 @@
       display: flex;
       }
     }
+
     .container{
     max-width: 350px;
-    background-color: #b1bdd6;
+    background-color: white;
     margin: 80px auto;
     padding: 25px;
     border-radius: 15px;
@@ -148,7 +171,7 @@ button:hover{
 
 .footer-box h2,
 .footer-box h3 {
-  color: #F2AEBB;
+  color: #9BA4B5;
 }
 
 .footer-box p {
@@ -172,4 +195,15 @@ button:hover{
   border-top: 1px solid #A7AAE1;
   font-size: 14px;
 }
- 
+ .fitness-footer a,
+.fitness-footer a:visited {
+  color: #F1F6F9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.fitness-footer a:hover {
+  color: #FFD700 
+  text-decoration: underline;
+  
+}
