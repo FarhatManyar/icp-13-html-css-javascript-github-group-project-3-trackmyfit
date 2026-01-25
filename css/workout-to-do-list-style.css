@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F1F6F9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
   .nav-bar {
     background-color: #212A3E;
@@ -111,21 +114,26 @@ body {
 
     .todo-section {
       max-width: 1100px;
-      margin: 0px auto;
-      
+      width: 90%;
+      margin: 10px auto 10px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
   .todo-item {
     color: #000000;
-    margin-top: 20px;
-    background: #f0f0f0;
-    padding: 15px 20px;
-    margin-bottom: 12px;
-    border-radius: 8px;
+    margin-top: 10px;
+    background: #ffffff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    box-shadow: 0 7px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 9px 16px rgba(0,0,0,0.1);
+    font-size: 19px;
+    padding: 22px 26px;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    width: 100%;
   }
 
   .todo-item.completed span {
@@ -134,7 +142,7 @@ body {
   }
 
   .todo-actions img {
-    height: 22px;
+    height: 29px;
     cursor: pointer;
     margin-left: 10px;
   }
@@ -145,7 +153,12 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 20px;
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 900px; 
+    margin: 40px auto 20px auto;
+    border-radius: 12px;
+    justify-content: center;
     width: 100%;
   }
 
@@ -155,7 +168,7 @@ body {
     border-radius: 6px;
     border: none;
     font-size: 16px;
-    width: 10%;
+    min-width: none;
   }
 
   #add-button {

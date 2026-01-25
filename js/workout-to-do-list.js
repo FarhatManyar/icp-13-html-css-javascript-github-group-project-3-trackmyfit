@@ -1,7 +1,7 @@
 let todoItems = JSON.parse(localStorage.getItem("todos")) || [
-  { text: "Assignments poori karni hai", done: false },
-  { text: "Leg day", done: false },
-  { text: "Sabji laani hai", done: false }
+  { text: "30 mins Cardio", done: false },
+  { text: "Sumo squats 3 sets 15 reps", done: false },
+  { text: "Stretching", done: false }
 ];
 
 const container = document.getElementById("todo-items-container");
